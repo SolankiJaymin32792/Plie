@@ -1,64 +1,79 @@
 import { StyleSheet } from 'react-native';
 
 export const HomeStyle = StyleSheet.create({
-  greeting: {
+  container: {
+    flex: 1,
+    padding: 16,
+    backgroundColor:'white'
+  },
+  centeredContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  header: {
+    marginBottom: 20,
+  },
+  title: {
     fontSize: 24,
     fontWeight: 'bold',
   },
   subtitle: {
-    color: '#888',
-    marginBottom: 16,
+    fontSize: 18,
+    color: 'gray',
   },
   card: {
     backgroundColor: '#fff',
-    borderRadius: 12,
-    padding: 12,
-    marginBottom: 12,
-    shadowColor: '#000',
-    shadowOpacity: 0.1,
-    shadowOffset: { width: 0, height: 2 },
-    shadowRadius: 6,
-    elevation: 3,
+    marginBottom: 20,
+    borderRadius: 10,
+    overflow: 'hidden',
+    elevation: 5,
   },
   cardHeader: {
     flexDirection: 'row',
-    alignItems: 'center',
+    padding: 10,
   },
   image: {
-    width: 60,
-    height: 60,
-    borderRadius: 8,
+    width: 80,
+    height: 80,
+    borderRadius: 10,
+  },
+  cardContent: {
+    flex: 1,
+    marginLeft: 10,
+  },
+  location: {
+    color: 'gray',
   },
   title: {
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: 'bold',
   },
   date: {
-    color: 'green',
+    color: 'gray',
   },
   price: {
-    color: '#444',
-  },
-  location: {
-    color: '#777',
-    fontSize: 12,
+    color: 'green',
   },
   tagsContainer: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    marginTop: 8,
-    gap: 6,
+    padding: 10,
   },
   tag: {
-    backgroundColor: '#eee',
-    paddingHorizontal: 8,
-    paddingVertical: 4,
-    borderRadius: 16,
-    fontSize: 12,
+    backgroundColor: '#f1f1f1',
+    borderRadius: 5,
+    padding: 5,
+    margin: 5,
   },
   cardFooter: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginTop: 8,
+    padding: 10,
+    alignItems: 'flex-end',
+  },
+  emptyText: {
+    textAlign: 'center',
+    marginTop: 20,
+    fontSize: 16,
+    color: 'gray',
   },
 });
