@@ -1,6 +1,6 @@
 export const loginUser = async (email, password) => {
     try {
-      const response = await fetch('https://your-api-url.com/login', {
+      const response = await fetch('https://schema.getpostman.com/json/collection/v2.1.0/collection.json', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
